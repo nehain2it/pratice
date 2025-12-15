@@ -1,0 +1,26 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+
+.tablemain {
+  width: 65%;
+  margin: 40px auto;
+  @include box-ui();
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th {
+      position: sticky;
+      top: 0;
+      background: $table-dark;
+      color: $white;
+    }
+
+    td, th {
+      padding: 12px;
+      white-space: nowrap;
+    }
+  }
+}
