@@ -143,9 +143,9 @@ background:#fffae0;
 
 .form-section{
 width:65%;
-padding:30px;
 margin:40px auto;
 background:white;
+padding:30px;
 box-shadow:0 5px 20px rgba(0,0,0,0.1);
 border-radius:15px;
 }
@@ -334,158 +334,177 @@ width:90%;
 padding:20px;
 }
 }
+/* ---------------------------------table----------------------------------------------------- */
 
-/* ------------------------------------------table------------------------------------------------------ */
 
-.tablemain{
-width: 65%;
-padding: 30px;
-margin: 40px auto;
+.table-container {
+width: 100%;
+max-width: 1000px;
+height: 350px;
+overflow-y: auto;
+border: 1px solid #ddd;
+border-radius: 10px;
+margin: auto;
 background: white;
-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-border-radius: 15px;
-overflow: visible;
-}
-.tablebody {
-width: 100%;
+position: relative;
+overflow-x: visible; 
 
-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-border-radius: 15px;
-overflow: visible;
 }
 
-.table-scroll {
-  overflow: auto;
-  max-height: 400px;
-  background: #1f2937;
-}
-
-
-table {
-  background: white;
-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-border-collapse: collapse;
-width: 100%;
-}
-
-thead th {
+.thead-container {
 position: sticky;
 top: 0;
-background: #1f2937;
-color: #fff;
+z-index: 10;
+background: white;
+}
+
+.table-container::-webkit-scrollbar {
+width: 10px;
+height: 10px;
+}
+.table-container::-webkit-scrollbar-thumb {
+background: #2b3a67;
+border-radius: 5px;
+}
+
+.custom-table {
+width: 100%;
+border-collapse: separate;
+border-spacing: 0;
+}
+.custom-table thead th {
+background: #2b3a67;
+color: white;
 padding: 12px;
 text-align: left;
+position: sticky;
+top: 0;
 z-index: 10;
-}
-
-th, td {
-
-padding: 12px; border-bottom: 1px solid #e5e7eb; 
-white-space: nowrap;
-max-width: 180px;   
-overflow: hidden;
-text-overflow: ellipsis;      
-}
-
-tbody tr {
-transition: background 0.2s ease;
-}
-
-tbody tr:hover {
-background: #f1f5f9;
+font-size: 14px;
+white-space: nowrap;  
+overflow: hidden;  
+text-overflow: ellipsis;  
+max-width: 100px; 
 }
 
 .sticky-col {
-position: sticky;
+background: #e8e9ee;
+}
+
+.custom-table tbody td {
+padding: 10px 14px;
+border-bottom: 1px solid #eee;
+max-width: 150px; 
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+cursor: pointer;
+font-size: 14px;
+}
+.custom-table tbody td.sticky-col {
+background: #f4f4f7;
+font-weight: 600;
+}
+
+
+.custom-table thead tr th:hover, 
+.custom-table tbody tr td:hover{
+white-space:normal;
+overflow: visible;
+text-overflow:initial;
+color: #000;
+}
+
+
+
+.custom-table tbody td.sticky-col:hover {
+left: auto;
 right: 0;
-background: #fff;
-z-index: 5;
 }
 
-thead .sticky-col {
-background: #1f2937;
-z-index: 15;
-}
-
-.menu {
+.menu-wrapper {
 position: relative;
 display: inline-block;
 }
 
-.dots {
+.menu-dots {
 cursor: pointer;
 font-size: 18px;
-padding: 5px 10px;
-border-radius: 6px;
-}
-
-.dots:hover {
-background: #e5e7eb;
 }
 
 .menu-box {
 position: absolute;
-left: -100px;
-top: 0;
-background: #fff;
-border-radius: 8px;
-box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-width: 100px;
-display: none;
+right: 0;
+top: -100%;
+background: white;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+opacity: 0;
+pointer-events: none;
+transition: opacity 0.3s;
 z-index: 20;
+min-width: 80px;
 }
 
-.menu-box a {
-display: block;
-padding: 10px;
-text-decoration: none;
-color: #111827;
-font-size: 14px;
+.menu-wrapper:hover .menu-box {
+opacity: 1;
+pointer-events: auto;
 }
 
-.menu-box a:hover {
-background: #f3f4f6;
+.menu-item {
+padding: 8px 12px;
+cursor: pointer;
 }
 
-.menu:hover .menu-box {
-display: block;
+.menu-item:hover {
+background: #f0f0f0;
+}
+
+@media (max-width: 600px) {
+.custom-table thead th,
+.custom-table tbody td {
+font-size: 12px;
+padding: 8px;
+}
+.table-container {
+height: 260px;
+}
 }
 
 ::-webkit-scrollbar-button:single-button:vertical:decrement {
-background: url("https://cdn-icons-png.flaticon.com/512/130/130906.png");
-background-position: center;
-background-size: 15px;
-  background-color: 0 5px 20px rgba(0, 0, 0, 0.1);
-background-repeat: no-repeat;
+  background: url("https://cdn-icons-png.flaticon.com/512/130/130906.png");
+  background-position: center;
+  background-size: 15px;
+   background-color: #f1f1f1;
+  background-repeat: no-repeat;
 }
-
+ 
 ::-webkit-scrollbar-button:single-button:vertical:increment {
-background: url("https://cdn-icons-png.flaticon.com/512/2985/2985150.png");
-background-position: center;
-background-size: 15px;
-  background-color: 0 5px 20px rgba(0, 0, 0, 0.1);
-background-repeat: no-repeat;
+  background: url("https://cdn-icons-png.flaticon.com/512/2985/2985150.png");
+  background-position: center;
+  background-size: 15px;
+    background-color: #f1f1f1;
+  background-repeat: no-repeat;
 }
-
+ 
 ::-webkit-scrollbar-button:single-button:horizontal:decrement {
-background: url("https://cdn-icons-png.flaticon.com/128/2985/2985161.png");
-background-position: center;
-background-size: 15px;
-  background-color: 0 5px 20px rgba(0, 0, 0, 0.1);
-background-repeat: no-repeat;
+  background: url("https://cdn-icons-png.flaticon.com/128/2985/2985161.png");
+  background-position: center;
+  background-size: 15px;
+    background-color: #f1f1f1;
+  background-repeat: no-repeat;
 }
-
+ 
 ::-webkit-scrollbar-button:single-button:horizontal:increment {
-background: url("https://cdn-icons-png.flaticon.com/512/2985/2985179.png");
-background-position: center;
-background-size: 15px;
-background-repeat: no-repeat;
-background-color: 0 5px 20px rgba(0, 0, 0, 0.1);
+  background: url("https://cdn-icons-png.flaticon.com/512/2985/2985179.png");
+  background-position: center;
+  background-size: 15px;
+  background-repeat: no-repeat;
+    background-color: #f1f1f1;
 }
-
-
-
-
+ 
+ 
 
 
 
