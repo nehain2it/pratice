@@ -1,0 +1,26 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+
+
+.form-section {
+  width: 65%;
+  margin: 40px auto;
+  @include box-ui();
+
+  input {
+    width: 96%;
+    padding: 12px;
+    border-radius: $radius-sm;
+    border: 1px solid #ccc;
+
+    &:focus {
+      border-color: $primary;
+      box-shadow: 0 0 5px rgba(74, 99, 231, 0.5);
+    }
+  }
+
+  @include respond(tablet) {
+    width: 90%;
+  }
+}

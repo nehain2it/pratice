@@ -1,0 +1,23 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+
+.footer {
+  background: #0d0d0d;
+  color: $white;
+  padding: 40px 20px;
+
+  &-container {
+    @include flex-center(space-between);
+    flex-wrap: wrap;
+  }
+
+  a:hover {
+    color: #4f9cf9;
+  }
+
+  @include respond(tablet) {
+    text-align: center;
+    flex-direction: column;
+  }
+}
