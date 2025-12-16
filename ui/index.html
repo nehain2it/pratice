@@ -1,348 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Custom Form UI</title>
-<link rel="stylesheet" href="layout.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Form UI</title>
+    <link rel="stylesheet" href="../Scss/layout.css">
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-<div class="logo">Practice UI</div>
-<nav class="menu">
-<a href="#">Home</a>
-<a href="#cards">Cards</a>
-<a href="#form">Form</a>
-</nav>
-</header>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">Practice UI</div>
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#cards">Cards</a>
+            <a href="#form">Form</a>
+        </nav>
+    </header>
 
-<!-- HERO SECTION -->
-<section class="hero">
-<div class="hero-content">
-<h1>Welcome to Our Portal</h1>
-<p>Experience fully customized inputs, animations and responsive design.</p>
-</div>
-<div class="hero-img">
-<img src="https://cdn-icons-png.flaticon.com/512/2920/2920268.png" alt="Hero Image">
-</div>
-</section>
-
-<!-- CARDS SECTION -->
-<section id="cards" class="cards-section">
-<h2>Our Topics</h2>
-<div class="cards">
-<div class="card">
-<img src="https://cdn-icons-png.flaticon.com/512/3306/3306610.png" alt="HTML">
-<p>HTML Basics</p>
-</div>
-<div class="card">
-<img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="CSS">
-<p>CSS Styling</p>
-</div>
-<div class="card">
-<img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Flexbox">
-<p>Flexbox</p>
-</div>
-<div class="card">
-<img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Grid">
-<p>Grid Layout</p>
-</div>
-<div class="card">
-<img src="https://cdn-icons-png.flaticon.com/512/2593/2593549.png" alt="Responsive">
-<p>Responsive UI</p>
-</div>
-<div class="card">
-<img src="https://cdn-icons-png.flaticon.com/512/4072/4072149.png" alt="Animation">
-<p>Animations</p>
-</div>
-</div>
-</section>
-
-<!-- FORM SECTION -->
-<section id="form" class="form-section">
-<h2>Registration Form</h2>
-<form>
-<div class="form-group">
-<label>Full Name</label>
-<input type="text" placeholder="Enter your name">
-</div>
-<div class="form-group">
-<label>Email Address</label>
-<input type="email" placeholder="Enter email">
-</div>
-
-<!-- CUSTOM SELECT -->
-<div class="form-group">
-<label>Select Country</label>
-<label class="custom-select">
-<input type="checkbox" class="select-toggle">
-<span class="selected">
-Choose country
-<span class="select-icon">▾</span>
-</span>
-<div class="options">
-<div class="option">India</div>
-<div class="option">USA</div>
-<div class="option">Canada</div>
-<div class="option">Australia</div>
-</div>
-</label>
-</div>
-
-<!-- CUSTOM RADIO -->
-<div class="form-group">
-<label>Gender</label>
-<div class="radio-group">
-<label class="custom-radio">
-<input type="radio" name="gender">
-<span class="radio-mark"></span> Male
-</label>
-<label class="custom-radio">
-<input type="radio" name="gender">
-<span class="radio-mark"></span> Female
-</label>
-</div>
-</div>
-
-<!-- CUSTOM CHECKBOX -->
-<div class="form-group">
-<label>Hobbies</label>
-<div class="checkbox-group">
-<label class="custom-checkbox">
-<input type="checkbox">
-<span class="check-mark"></span> Reading
-</label>
-<label class="custom-checkbox">
-<input type="checkbox">
-<span class="check-mark"></span> Travelling
-</label>
-</div>
-</div>
-<div class="form-group">
-<label>Upload Resume</label>
-<input type="file">
-</div>
-<button class="submit-btn">Submit</button>
-</form>
-</section>
-<div class="table-container"> 
-<table class="custom-table">  
-<thead>  
-<tr>  
-<th>Name</th>  
-<th>Department</th>  
-<th>Role</th>  
-<th class="sticky-col">Status</th>  
-</tr>  
-</thead>  
-<tbody>  
-<tr>  
-<td data-full="Neha Sain">Neha Sain</td>  
-<td data-full="Software Development Department">Software Development Department</td>  
-<td data-full="Frontend UI/UX Specialist">Frontend UI/UX Specialist</td>  
-<td class="sticky-col">
-<div class="menu-wrapper"> 
-<span class="menu-dots">⋮</span> 
-<div class="menu-box"> 
-<div class="menu-item">View</div> 
-<div class="menu-item">Edit</div>
-<div class="menu-item">Delete</div> 
-<div class="menu-item">Update Status</div> 
-</div> 
-</div> 
-</td>
-</tr>  
-<tr>  
-<td data-full="Rohan Kumar">Rohan Kumar</td>  
-<td data-full="Human Resource Management">Human Resource Management</td>  
-<td data-full="Talent Acquisition Executive">Talent Acquisition Executive</td>  
-<td class="sticky-col">
-<div class="menu-wrapper"> 
-<span class="menu-dots">⋮</span> 
-<div class="menu-box"> 
-<div class="menu-item">View</div> 
-<div class="menu-item">Edit</div>
-<div class="menu-item">Delete</div> 
-<div class="menu-item">Update Status</div> 
-</div> 
-</div> 
-</td>
-</tr>  
-<tr>  
-<td data-full="Amit Verma">Amit Verma</td>  
-<td data-full="Operations and Logistics Control Department">Operations and Logistics Control Department</td>  
-<td data-full="Senior Management Supervisor">Senior Management Supervisor</td>  
-<td class="sticky-col">
-<div class="menu-wrapper"> 
-<span class="menu-dots">⋮</span> 
-<div class="menu-box"> 
-<div class="menu-item">View</div> 
-<div class="menu-item">Edit</div>
-<div class="menu-item">Delete</div> 
-<div class="menu-item">Update Status</div> 
-</div> 
-</div> 
-</td>
-</tr>  
-<tr>  
-<td data-full="Shreya Gupta">Shreya Gupta</td>  
-<td data-full="Enterprise Finance & Accountings Department">Enterprise Finance & Accountings Department</td>  
-<td data-full="Lead Financial Analyst">Lead Financial Analyst</td>  
-<td class="sticky-col">
-<div class="menu-wrapper"> 
-<span class="menu-dots">⋮</span> 
-<div class="menu-box"> 
-<div class="menu-item">View</div> 
-<div class="menu-item">Edit</div>
-<div class="menu-item">Delete</div> 
-<div class="menu-item">Update Status</div> 
-</div> 
-</div> 
-</td>
-</tr>  
-<tr>  
-<td data-full="Rohan Kumar">Rohan Kumar</td>  
-<td data-full="Human Resource Management">Human Resource Management</td>  
-<td data-full="Talent Acquisition Executive">Talent Acquisition Executive</td>  
-<td class="sticky-col">
-<div class="menu-wrapper"> 
-<span class="menu-dots">⋮</span> 
-<div class="menu-box"> 
-<div class="menu-item">View</div> 
-<div class="menu-item">Edit</div>
-<div class="menu-item">Delete</div> 
-<div class="menu-item">Update Status</div> 
-</div> 
-</div> 
-</td>
-</tr>  
-<tr>  
-<td data-full="Amit Verma">Amit Verma</td>  
-<td data-full="Operations and Logistics Control Department">Operations and Logistics Control Department</td>  
-<td data-full="Senior Management Supervisor">Senior Management Supervisor</td>  
-<td class="sticky-col">
-<div class="menu-wrapper"> 
-<span class="menu-dots">⋮</span> 
-<div class="menu-box"> 
-<div class="menu-item">View</div> 
-<div class="menu-item">Edit</div>
-<div class="menu-item">Delete</div> 
-<div class="menu-item">Update Status</div> 
-</div> 
-</div> 
-</td>
-</tr>  
-<tr>  
-<td data-full="Shreya Gupta">Shreya Gupta</td>  
-<td data-full="Enterprise Finance & Accountings Department">Enterprise Finance & Accountings Department</td>  
-<td data-full="Lead Financial Analyst">Lead Financial Analyst</td>  
-<td class="sticky-col">
-<div class="menu-wrapper"> 
-<span class="menu-dots">⋮</span> 
-<div class="menu-box"> 
-<div class="menu-item">View</div> 
-<div class="menu-item">Edit</div>
-<div class="menu-item">Delete</div> 
-<div class="menu-item">Update Status</div> 
-</div> 
-</div> 
-</td>
-</tr>  
-<tr>  
-<td data-full="Rohan Kumar">Rohan Kumar</td>  
-<td data-full="Human Resource Management">Human Resource Management</td>  
-<td data-full="Talent Acquisition Executive">Talent Acquisition Executive</td>  
-<td class="sticky-col">
-<div class="menu-wrapper"> 
-<span class="menu-dots">⋮</span> 
-<div class="menu-box"> 
-<div class="menu-item">View</div> 
-<div class="menu-item">Edit</div>
-<div class="menu-item">Delete</div> 
-<div class="menu-item">Update Status</div> 
-</div> 
-</div> 
-</td> 
-</tr>  
-<tr>  
-<td data-full="Amit Verma">Amit Verma</td>  
-<td data-full="Operations and Logistics Control Department">Operations and Logistics Control Department</td>  
-<td data-full="Senior Management Supervisor">Senior Management Supervisor</td>  
-<td class="sticky-col">
-<div class="menu-wrapper"> 
-<span class="menu-dots">⋮</span> 
-<div class="menu-box"> 
-<div class="menu-item">View</div> 
-<div class="menu-item">Edit</div>
-<div class="menu-item">Delete</div> 
-<div class="menu-item">Update Status</div> 
-</div> 
-</div> 
-</td>  
-</tr>  
-<tr>  
-<td data-full="Shreya Gupta">Shreya Gupta</td>  
-<td data-full="Enterprise Finance & Accountings Department">Enterprise Finance & Accountings Department</td>  
-<td data-full="Lead Financial Analyst">Lead Financial Analyst</td>  
-<td class="sticky-col">
-    <div class="menu-wrapper">
-
-        <!-- Hidden Checkbox -->
-        <input type="checkbox" id="menu1" class="menu-toggle">
-
-        <!-- 3 dots -->
-        <label for="menu1" class="menu-dots">⋮</label>
-
-        <!-- Dropdown -->
-        <div class="menu-box">
-            <div class="menu-item">View</div>
-            <div class="menu-item">Edit</div>
-            <div class="menu-item">Delete</div>
-            <div class="menu-item">Update Status</div>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our Portal</h1>
+            <p>Experience fully customized inputs, animations and responsive design.</p>
         </div>
+        <div class="hero-img">
+            <img src="https://cdn-icons-png.flaticon.com/512/2920/2920268.png" alt="Hero Image">
+        </div>
+    </section>
 
+    <!-- CARDS SECTION -->
+    <section id="cards" class="cards-section">
+        <h2>Our Topics</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3306/3306610.png" alt="HTML">
+                <p>HTML Basics</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="CSS">
+                <p>CSS Styling</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Flexbox">
+                <p>Flexbox</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Grid">
+                <p>Grid Layout</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2593/2593549.png" alt="Responsive">
+                <p>Responsive UI</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/4072/4072149.png" alt="Animation">
+                <p>Animations</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section id="form" class="form-section">
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" id="fullName" placeholder="Enter your name" required>
+                <span class="error" id="name-error"></span>
+            </div>
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" id="email" placeholder="Enter email" required>
+                <span class="error" id="email-error"></span>
+            </div>
+
+            <!-- CUSTOM SELECT -->
+            <div class="form-group">
+                <label>Select Country</label>
+                <label class="custom-select">
+                    <span class="selected">
+                        Choose country
+                        <span class="select-icon">▾</span>
+                    </span>
+                    <div class="options">
+                        <div class="option">India</div>
+                        <div class="option">USA</div>
+                        <div class="option">Canada</div>
+                        <div class="option">Australia</div>
+                    </div>
+                </label>
+                <span class="error" id="country-error"></span>
+            </div>
+
+            <!-- CUSTOM RADIO -->
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="gender" value="male" required>
+                        <span class="radio-mark"></span> Male
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="gender" value="female">
+                        <span class="radio-mark"></span> Female
+                    </label>
+                </div>
+                <span class="error" id="gender-error"></span>
+            </div>
+
+            <!-- CUSTOM CHECKBOX -->
+            <div class="form-group">
+                <label>Hobbies</label>
+                <div class="checkbox-group">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" name="hobbies" value="reading">
+                        <span class="check-mark"></span> Reading
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" name="hobbies" value="travelling">
+                        <span class="check-mark"></span> Travelling
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Upload Resume</label>
+                <input type="file" id="resume" accept=".pdf,.doc,.docx" required>
+                <span class="error" id="resume-error"></span>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </section>
+
+    <div class="tablemain">
+    <div class="tablebody">
+    <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Status</th>
+          <th class="sticky-col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Neha</td>
+          <td>neha@gmail.com </td>
+          <td>Developer</td>
+          <td>Active</td>
+          <td>
+            <div class="menu"> 
+              <span class="dots">⋮</span>
+              <div class="menu-box">
+                <a href="#">View</a>
+                <a href="#">Edit</a>
+                <a href="#">Delete</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+            <tr>
+          <td>2</td>
+          <td>boby</td>
+          <td>boby@gmail.com</td>
+          <td>Developer</td>
+          <td>Active</td>
+          <td>
+            <div class="menu">
+              <span class="dots">⋮</span>
+              <div class="menu-box">
+                <a href="#">View</a>
+                <a href="#">Edit</a>
+                <a href="#">Delete</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+            <tr>
+          <td>3</td>
+          <td>kashish</td>
+          <td>kashish@gmail.com</td>
+          <td>Developer</td>
+          <td>Active</td>
+          <td>
+            <div class="menu">
+              <span class="dots">⋮</span>
+              <div class="menu-box">
+                <a href="#">View</a>
+                <a href="#">Edit</a>
+                <a href="#">Delete</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+            <tr>
+          <td>4</td>
+          <td>tanu</td>
+          <td>tanu@gmail.com</td>
+          <td>Developer</td>
+          <td>Active</td>
+          <td>
+            <div class="menu">
+              <span class="dots">⋮</span>
+              <div class="menu-box">
+                <a href="#">View</a>
+                <a href="#">Edit</a>
+                <a href="#">Delete</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>ankit</td>
+          <td>ankit@gmail.com</td>
+          <td>Tester</td>
+          <td>Inactive</td>
+          <td>
+            <div class="menu">
+              <span class="dots">⋮</span>
+              <div class="menu-box">
+                <a href="#">View</a>
+                <a href="#">Edit</a>
+                <a href="#">Delete</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>prashent</td>
+          <td>prashent@gmail.com</td>
+          <td>Manager</td>
+          <td>Active</td>
+          <td>
+            <div class="menu">
+              <span class="dots">⋮</span>
+              <div class="menu-box">
+                <a href="#">View</a>
+                <a href="#">Edit</a>
+                <a href="#">Delete</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>vipul</td>
+          <td>vipul@gmail.com</td>
+          <td>Manager</td>
+          <td>Active</td>
+          <td>
+            <div class="menu">
+              <span class="dots">⋮</span>
+              <div class="menu-box">
+                <a href="#">View</a>
+                <a href="#">Edit</a>
+                <a href="#">Delete</a>
+              </div>
+            </div>
+          </td>
+        </tr><tr>
+          <td>8</td>
+          <td>yesh</td>
+          <td>yesh@gmail.com</td>
+          <td>Manager</td>
+          <td>Active</td>
+          <td>
+            <div class="menu">
+              <span class="dots">⋮</span>
+              <div class="menu-box">
+                <a href="#">View</a>
+                <a href="#">Edit</a>
+                <a href="#">Delete</a>
+              </div>
+            </div>
+          </td>     
+        </tr><tr>
+          <td>9</td>
+          <td>ankush</td>
+          <td>ankush@gmail.com</td>
+          <td>Manager</td>
+          <td>Active</td>
+          <td>
+            <div class="menu">
+              <span class="dots">⋮</span>
+              <div class="menu-box">
+                <a href="#">View</a>
+                <a href="#">Edit</a>
+                <a href="#">Delete</a>
+              </div>
+            </div>
+          </td>
+        </tr><tr>
+          <td>10</td>
+          <td>brijesh</td>
+          <td>brijesh@gmail.com</td>
+          <td>Manager</td>
+          <td>Active</td>
+          <td>
+            <div class="menu">
+              <span class="dots">⋮</span>
+              <div class="menu-box">
+                <a href="#">View</a>
+                <a href="#">Edit</a>
+                <a href="#">Delete</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
     </div>
-</td>
-
-</tr>  
-</tbody>  
-</table>
-</div> 
-
-<!-- FOOTER -->
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-section">
-            <h3>Practice UI</h3>
-            <p>A simple responsive UI with custom components, animations and layouts.</p>
-        </div>
-
-        <div class="footer-section">
-            <h4>Quick Links</h4>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#cards">Cards</a></li>
-                <li><a href="#form">Form</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-section">
-            <h4>Contact</h4>
-            <ul>
-                <li>Email: support@example.com</li>
-                <li>Phone: +91 9876543210</li>
-            </ul>
-        </div>
     </div>
-
-    <div class="footer-bottom">
-        © 2025 Practice UI. All rights reserved.
     </div>
-</footer>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Practice UI</h3>
+                <p>A simple responsive UI with custom components, animations and layouts.</p>
+            </div>
 
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#cards">Cards</a></li>
+                    <li><a href="#form">Form</a></li>
+                </ul>
+            </div>
 
-<script src="script.js"></script>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li>Email: support@example.com</li>
+                    <li>Phone: +91 9876543210</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 Practice UI. All rights reserved.
+        </div>
+    </footer>
+
 </body>
 </html>
