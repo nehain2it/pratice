@@ -418,6 +418,7 @@ thead th {
 }
 
 th, td {
+  z-index: 1;
   padding: 12px;
   border-bottom: 1px solid #e5e7eb;
   white-space: nowrap;
@@ -426,7 +427,13 @@ th, td {
   text-overflow: ellipsis;
 }
 
+td {
+  position: relative;
+  overflow: visible !important;
+}
+
 tbody tr {
+  z-index: 1;
   transition: background 0.2s ease;
 }
 
@@ -448,39 +455,38 @@ thead .sticky-col {
 
 .menu {
   position: relative;
+  z-index: 50;
   display: inline-block;
 }
 
 .dots {
   cursor: pointer;
   font-size: 18px;
-  padding: 5px 10px;
+  padding: 6px 10px;
   border-radius: 6px;
-}
-
-.dots:hover {
-  /* background: black; */
-  z-index: inherit;
 }
 
 .menu-box {
   position: absolute;
-  /* left: -100px; */
-  top: 0;
+  top: -16%;
+  right: -90px;
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  width: 100px;
-  display: none;
-  z-index: 200;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 80px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-5px);
+  transition: 0.25s ease;
+  z-index: 9999;
 }
 
 .menu-box a {
   display: block;
   padding: 10px;
-  text-decoration: none;
-  /* color: #111827; */
   font-size: 14px;
+  text-decoration: none;
+  color: #111;
 }
 
 .menu-box a:hover {
@@ -488,14 +494,16 @@ thead .sticky-col {
 }
 
 .menu:hover .menu-box {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 ::-webkit-scrollbar-button:single-button:vertical:decrement {
   background: url("https://cdn-icons-png.flaticon.com/512/130/130906.png");
   background-position: center;
   background-size: 15px;
-  background-color: 0 5px 20px rgba(0, 0, 0, 0.1);
+  background-color: 0 5px 20px rgba(238, 10, 10, 0.1);
   background-repeat: no-repeat;
 }
 
